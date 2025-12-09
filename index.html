@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Java Web Demo</title>
+</head>
+<body>
+  <h1>Java Web Demo</h1>
+  <p>Simple calculator demo using a servlet mapped to <code>/calc</code>.</p>
+
+  <h3>Try it from the form below</h3>
+  <form action="calc" method="get">
+    <input name="a" placeholder="a">
+    <select name="op">
+      <option value="add">+</option>
+      <option value="sub">-</option>
+      <option value="mul">*</option>
+      <option value="div">/</option>
+    </select>
+    <input name="b" placeholder="b">
+    <button type="submit">Compute</button>
+  </form>
+
+  <p>Or call directly: <code>/java-web-demo/calc?a=5&op=add&b=3</code> (path depends on WAR name)</p>
+</body>
+</html>
